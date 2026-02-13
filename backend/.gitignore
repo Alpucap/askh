@@ -1,0 +1,23 @@
+# --- Python & Virtual Env ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# --- Environment Variables (PENTING: JANGAN DIUPLOAD) ---
+.env
+
+# --- Database & Storage ---
+# ChromaDB isinya binary vector data (berat & berubah-ubah), jangan di-git
+chroma_db/
+
+# Jika kamu punya folder cache lain
+.cache/
+
+# --- IDE Settings (Optional) ---
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log
