@@ -1,9 +1,17 @@
-llama-index
-llama-index-core
-llama-index-llms-gemini
-llama-index-embeddings-gemini
-llama-index-vector-stores-chroma
-python-dotenv
-chromadb
+# --- Framework & Server ---
 fastapi
 uvicorn
+python-dotenv
+python-multipart
+nest_asyncio
+
+# --- Database ---
+chromadb
+
+# --- LlamaIndex Core ---
+llama-index-core
+
+# --- LlamaIndex Integrations (PENTING) ---
+llama-index-llms-google-genai
+llama-index-embeddings-google-genai
+llama-index-vector-stores-chroma
