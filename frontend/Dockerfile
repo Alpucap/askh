@@ -10,6 +10,9 @@ RUN npm install
 COPY . .
 
 # Proses build (ini akan membaca file .env kamu)
+ARG NEXT_PUBLIC_API_URL
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+
 RUN npm run build
 
 # Stage 2: Runner (Hanya ambil hasil jadi agar ringan)
