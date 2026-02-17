@@ -14,7 +14,6 @@ import {
   Layers
 } from "lucide-react";
 
-// Update Type agar sesuai dengan struktur Tree dari Backend baru
 type FileNode = {
   name: string;
   type: "file" | "folder";
@@ -28,7 +27,7 @@ export default function LandingPage() {
   useEffect(() => {
     const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
     
-    fetch(`${API_URL}/api/docs`) // Gunakan template literal ``
+    fetch(`${API_URL}/api/docs`) 
       .then((res) => res.json())
       .then((data: FileNode[]) => {
         const categoryNames = data.map((node) => node.name);
