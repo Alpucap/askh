@@ -32,6 +32,7 @@ def ingest_data():
     
     os.makedirs(db_path, exist_ok=True)
 
+    # Inisialisasi hanya dilakukan SETELAH folder benar-benar bersih
     db = chromadb.PersistentClient(path=db_path)
     chroma_collection = db.get_or_create_collection("askh_knowledge")
     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
